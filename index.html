@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KlarSicht – Startseite</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet" />
+  <style>
+    /* Schriftart */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 3rem 1rem 1.5rem;
+      background: #f9f9f9;
+    }
+
+    h1 {
+      color: #48d1cc;
+      font-weight: 500;
+      font-size: 3.5rem;
+      margin: 0;
+    }
+
+    .slogan {
+      font-weight: 300;
+      font-size: 1.5rem;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0 2rem;
+      background: #333; /* anthrazit Hintergrund für Nav */
+    }
+
+    .nav-button {
+      color: #fff;
+      text-decoration: none;
+      background-color: #333;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-button:hover {
+      background-color: #48d1cc;
+      color: #fff;
+    }
+
+    /* Bildreihe */
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 2rem 1rem;
+      flex-wrap: wrap;
+    }
+
+    .image-row img {
+      width: 220px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .image-row img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #777;
+      border-top: 1px solid #eee;
+      background: #f9f9f9;
+    }
+
+    footer a {
+      color: #48d1cc;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      nav {
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      .image-row img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>KlarSicht</h1>
+    <p class="slogan">Fehlt die Durchsicht? Ich bringe die Klarheit zurück!</p>
+  </header>
+
+  <nav>
+    <a href="index.html" class="nav-button">Startseite</a>
+    <a href="leistungen.html" class="nav-button">Leistungen</a>
+    <a href="ueber.html" class="nav-button">Über mich</a>
+    <a href="kontakt.html" class="nav-button">Kontakt</a>
+    <a href="impressum.html" class="nav-button">Impressum</a>
+  </nav>
+
+  <section class="image-row">
+    <img src="https://via.placeholder.com/250x150?text=Fenster" alt="Fenster" />
+    <img src="https://via.placeholder.com/250x150?text=Wintergarten" alt="Wintergarten" />
+    <img src="https://via.placeholder.com/250x150?text=Spiegel" alt="Spiegel" />
+    <img src="https://via.placeholder.com/250x150?text=Glasmöbel" alt="Glasmöbel" />
+  </section>
+
+  <footer>
+    <p>Kontakt: <a href="mailto:info@klarsichtservice.de">info@klarsichtservice.de</a></p>
+    <p>&copy; 2025 KlarSicht</p>
+  </footer>
+</body>
+</html>
